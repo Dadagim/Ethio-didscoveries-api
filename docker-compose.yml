@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    container_name: EthioDiscoveries-api
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+
